@@ -75,9 +75,16 @@
         /* Aggiustamenti per il contenuto principale */
         .content {
             margin-left: 240px; /* Spazio per l'indice laterale */
-            padding: 20px;
+            padding: 0;
             flex: 1;
-            padding-bottom: 60px; /* Distanza dal footer */
+            position: relative;
+        }
+
+        /* Immagine che occupa tutta la parte bianca */
+        .content img {
+            width: 100%; /* Occupa tutta la larghezza disponibile */
+            height: 100vh; /* Occupa tutta l'altezza della finestra */
+            object-fit: cover; /* Mantiene le proporzioni senza distorcere l'immagine */
         }
 
         footer {
@@ -113,8 +120,8 @@
     </nav>
 
     <div class="content">
-        <!-- Contenuto principale (qui ho rimosso Marasma e Portfolio) -->
-        <!-- Ora la parte bianca è vuota, tranne per i contenuti specifici -->
+        <!-- Immagine che occupa tutta la parte bianca -->
+        <img src="https://via.placeholder.com/1920x1080" alt="Immagine principale">
     </div>
 
     <!-- Footer con copyright -->
