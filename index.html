@@ -13,6 +13,8 @@
             background-color: #f5f5f5;
             color: #333;
             display: flex;
+            min-height: 100vh; /* Impostato per assicurare che la pagina occupi tutta la altezza */
+            flex-direction: column;
         }
 
         /* Indice laterale con sfondo nero */
@@ -28,6 +30,7 @@
             flex-direction: column;
             justify-content: flex-start;
             color: white;
+            z-index: 1000; /* Assicurati che l'indice sia sopra al contenuto */
         }
 
         nav .title {
@@ -74,19 +77,20 @@
             margin-left: 240px; /* Spazio per l'indice laterale */
             padding: 20px;
             flex: 1;
+            padding-bottom: 60px; /* Distanza dal footer */
         }
 
         footer {
             background-color: #fff;
             padding: 20px 0;
             margin-top: 20px;
-            box-shadow: 0px -2px 10px rgba(0, 0, 0, 0.1);
             text-align: center;
+            box-shadow: 0px -2px 10px rgba(0, 0, 0, 0.1);
+            color: #777;
         }
 
         footer p {
             margin: 0;
-            color: #777;
             font-size: 1em;
         }
     </style>
