@@ -15,8 +15,39 @@
         }
         header {
             background-color: #fff;
-            padding: 20px;
+            padding: 40px 20px 20px;
             box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            color: #333;
+        }
+        header p {
+            margin: 10px 0 0;
+            font-size: 1.2em;
+            color: #777;
+        }
+        nav {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #333;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+            margin: 0 10px;
+            font-size: 1.1em;
+        }
+        nav a:hover {
+            background-color: #444;
+            border-radius: 5px;
+        }
+        .section {
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 1000px;
         }
         .gallery {
             display: grid;
@@ -32,15 +63,21 @@
             border-radius: 10px;
             box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
             transition: transform 0.3s;
+            margin: 0 auto;
         }
         .gallery img:hover {
             transform: scale(1.05);
         }
         footer {
             background-color: #fff;
-            padding: 10px;
+            padding: 20px 0;
             margin-top: 20px;
             box-shadow: 0px -2px 10px rgba(0, 0, 0, 0.1);
+        }
+        footer p {
+            margin: 0;
+            color: #777;
+            font-size: 1em;
         }
     </style>
 </head>
@@ -49,12 +86,39 @@
         <h1>Marasma</h1>
         <p>Portfolio</p>
     </header>
-    <div class="gallery">
-        <img src="https://source.unsplash.com/400x400/?art" alt="Opera d'arte 1">
-        <img src="https://source.unsplash.com/400x400/?painting" alt="Opera d'arte 2">
-        <img src="https://source.unsplash.com/400x400/?abstract" alt="Opera d'arte 3">
-        <img src="https://source.unsplash.com/400x400/?sculpture" alt="Opera d'arte 4">
+    <!-- Indice di navigazione -->
+    <nav>
+        <a href="#painting">Pittura</a>
+        <a href="#photography">Fotografia</a>
+        <a href="#video">Video</a>
+    </nav>
+
+    <!-- Sezione Pittura -->
+    <div id="painting" class="section">
+        <h2>Pittura</h2>
+        <div class="gallery">
+            <img src="https://source.unsplash.com/400x400/?art" alt="Opera d'arte 1">
+            <img src="https://source.unsplash.com/400x400/?painting" alt="Opera d'arte 2">
+        </div>
     </div>
+
+    <!-- Sezione Fotografia -->
+    <div id="photography" class="section">
+        <h2>Fotografia</h2>
+        <div class="gallery">
+            <img src="https://source.unsplash.com/400x400/?photography" alt="Fotografia 1">
+            <img src="https://source.unsplash.com/400x400/?landscape" alt="Fotografia 2">
+        </div>
+    </div>
+
+    <!-- Sezione Video -->
+    <div id="video" class="section">
+        <h2>Video</h2>
+        <p>Questa sezione contiene alcuni video. Puoi aggiungere qui i tuoi video o un embed.</p>
+        <!-- Esempio di un video incorporato -->
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+
     <footer>
         <p>&copy; 2024 - Marasma</p>
     </footer>
